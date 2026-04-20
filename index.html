@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+      <meta charset="UTF-8">
+      <title>Week 7</title>
+</head>
+<body>
+
+    <h1> Week 7 Jacascript</h1>
+    <h2>Notes App</h2>
+    <input id="noteInput" placeholder="Write a note..." />
+    <button id="addNoteBtn">Add Note</button>
+
+    <ul id="notesList"></ul>
+
+    <form id="contact-form">
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+    <textarea name="message" placeholder="Message"></textarea>
+
+    <button type="submit">Send</button>
+     
+
+    <input id="todoInput" type="text" placeholder="Enter todo">
+
+    <button type="button"onclick="addTodo(document.getElementById('todoInput').value)">
+    Add Todo
+    </button>
+
+    <ul id="todoList"></ul>
+
+    <h2>Products</h2>
+    <div id="productList"></div>
+
+    <h2>Cart</h2>
+    <p>Items in cart: <span id="cartCount">0</span></p>
+
+    <ul id="cartList"></ul>
+
+    <p id="total">Total: 0</p>
+
+<button onclick="clearCart()">Clear Cart</button>
+
+    
+    </form>
+
+    <script src="js/storage.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/api.js"></script>
+    <script src="script.js"></script>
+    <script src="js/debug.js"></script>
+
+</body>
+</html>
